@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .sub{
+            height:100vh;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }  
+        .parent{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            /* flex-direction: column; */
+            align-items: center;
+            /* margin-top:20px; */
+            /* margin-left: 450px; */
+            background-color: hotpink;
+        }
+        .demo{
+            height:500px;
+            width: 500px;
+            border: 2px solid black;
+            /* margin:auto; 
+            margin-top: 20px;  */
+            align-items: center;
+            display: flex;
+            justify-content:space-evenly;
+            flex-direction: column;
+            background-color: bisque;
+            
+        } 
+        .child,img{
+            height: 90px;
+            width: 90px;
+            border: 2px solid black;
+        } 
+              
+    </style>
+</head>
+<body>
+    <div class="sub">
+    <div class="parent">
+        <div class="child">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsIz4qZKTOplGKCIt860B8HP3mTBMZGACNFg&s" alt="">
+        </div>
+        <div class="child">
+            <img src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3" alt="">
+        </div>
+    </div>
+    
+    <div class="demo">
+        <div class="child"> 
+            <img src="https://www.shutterstock.com/image-photo/tom-jerry-cartoon-characters-wearing-260nw-2521724635.jpg" alt="">
+            
+        </div>
+        <div class="child">
+            <img src="https://i.pinimg.com/236x/d4/82/53/d4825332159f260d32fde6112f4d6754.jpg" alt="">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
