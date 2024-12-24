@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;                                                      ;
+}
 header{
     height: 100px;
     width: 100%;
@@ -32,13 +37,14 @@ nav ul{
 .middle{
    height: 1000px;
    width: 100%;
-   border: 1px solid rosybrown  ;
+   border: 1px solid white  ;
    background-image: url(image/1.jpg);
    background-repeat: no-repeat;
    background-size:cover; 
    text-align: center;
    font-family:raleway, "helvetica neue", helvetica, arial, sans-serif;
    color: white;
+   /* background-attachment: fixed; */
 
 }
 .middle .pt{
@@ -49,15 +55,234 @@ nav ul{
 .btn1{
     height: 50px;
     width: 150px;
-    
-}
-.button{
     border: none;
+    background-color: rgb(116, 92, 250);
+    color: white;
+}
+.btn2{
+
+    height: 50px;
+    width: 150px;
+     border: none;
+     background-color: none;
+}
+.btn1:hover{
+    cursor: pointer;
+    transition: 2s;
+    background-color: turquoise;
 }
 .btn2:hover{
-     cursor: pointer;
-     color: white;
-     background-color: none;
+    border: white;
+    cursor: pointer;
+    transition: 1s;
+}
+.main{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+.ch1{
+    height: 300px;
+    width: 500px;
+    /* border: 1px solid red; */
+    
+}
+.ch2{
+    height: 300px;
+    width: 500px;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+}
+img{
+    height: 400px;
+    width: 600px;
+}
+.btn3{
+    height: 60px;
+    width: 180px;
+    border: none;
+    margin-top: 10px;;
+    background-color: rgb(116, 92, 250);
+    color: white;
+    font-size: 20px;
+}
+.btn3:hover{
+    cursor: pointer;
+    transition: 1s;
+    color: white;
+}
+#center{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.child1{
+    height: 400px;
+    width: 400px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.child2{
+    height: 400px;
+    width: 400px;
+    /* border: 2px solid black; */
+}
+.btn4{
+    height: 50px;
+    width: 180px;
+    border: none;
+    background-color: rgb(116, 92, 250);
+
+}
+.btn4:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+.hire{
+    height: 500px;
+    width:100% ;
+    background-image:url(image/4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+}
+.pix{
+    /* height: 800px; */
+    width: 100%; 
+    font-size: 60px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+     */
+}
+.hire p{
+     
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+     */
+}
+.btn5{
+    height: 60px;
+    width: 180px;
+   background-color: rgb(116, 92, 250);
+   border: none;
+   margin-top:10px;
+   color: white;
+}
+.btn5:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: #452dca;
+}
+.fix{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+.fix p{
+    width: 800px;
+}
+.btn6{
+    height: 60px;
+    width: 180px;
+    background-color: rgb(116, 92, 250);
+    border: none;
+    margin-top:10px;
+    color: white;
+}
+.btn6:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: #452dca;
+}
+.vip{
+    height:900px;
+    width: 100%;
+    border: 2px solid darkolivegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+.img5{
+    height: 900px;
+    width: 70%;
+}
+.line{
+    height: 200px;
+    width: 100%;
+    background-color:rgb(14, 16, 20);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shap{
+    height: 1220px;
+    width: 100%;
+    border: 2px solid palevioletred;
+    background-color: black;
+}
+.copy{
+    height: 500px;
+    width: 100%;
+    border: 1px solid yellow;
+    background-image: url(image/16.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+.white{
+        height: 100px;
+        width: 100%;
+        border:2px solid white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;                                                                            
 
 
+}
+.rr{
+    height: 100px;
+    width: 30%;
+    /* position: relative;
+    top:30%;
+    right: 7%; */
+    display: flex   ;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-direction: column; */
+    border: 1px solid white;
+    margin: auto;
+    font-size: 30px;
 }
