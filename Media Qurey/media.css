@@ -1,0 +1,19 @@
+@media(max-width:576px)
+{
+    .parent{
+        background-color: bisque;
+    }
+    .child p{
+        display: none;
+    }
+
+}
+
+@media(max-width:480px)
+{
+    .parent{
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+    }
+}
