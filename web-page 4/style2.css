@@ -1,0 +1,241 @@
+.main{
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(45deg, black, transparent), url(images/insta-1.jpg);
+    background-size: cover;
+}
+
+.box1{
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.child1{
+   height: 200px;
+   width: 200px;
+   border: 2px solid black;
+   display:flex ;
+   justify-content: center;
+   align-items: center;
+}
+.btn1{
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+}
+.btn1:hover{
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 10px 10px 5px 12px red;
+    transition: all 0.3s;
+   transform: translatey(-20%);
+}
+.child2{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+ .btn2{
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow:10px 10px 5px 12px lightblue;
+}
+.btn2:hover{
+    cursor: pointer;
+    transition: 1s;
+    transform: translatey(-20%);
+    box-shadow: 10px 10px 5px 12px red;
+    transition: all 0.3s;
+   transform:translatey(-20%);
+}
+ .box2{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .child3{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+ }
+ .btn3{
+    height: 70px;
+    width: 200px;
+    border-radius:30px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+ }
+ .btn3:hover{
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 10px 10px 5px 12px red;
+    transform:translatey(-20%);
+}
+ .box3{
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+ }
+ .child4{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+ }
+ .btn4{
+    height: 70px;
+    width: 100px;
+ }
+ .btn4:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+ .child5{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+ }
+ .btn5{
+    height: 70px;
+    width: 100px;
+ }
+ .btn5:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+ .child6{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+ }
+ .btn6{
+    height: 70px;
+    width: 100px;
+ }
+.btn6:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* Common styles for all buttons */
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    border: 2px solid #333;
+    background: transparent;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Button 1 - Simple Slide Up */
+.btn1 {
+    border-color: #2196F3;
+    color: #2196F3;
+}
+
+.btn1:hover {
+    color: white;
+    background: #2196F3;
+    transform: translateY(-3px);
+}
+
+/* Button 2 - Simple Slide Down */
+.btn2 {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+.btn2:hover {
+    color: white;
+    background: #4CAF50;
+    transform: translateY(3px);
+}
+
+/* Button 3 - Simple Fade */
+.btn3 {
+    border-color: #E91E63;
+    color: #E91E63;
+}
+
+.btn3:hover {
+    color: white;
+    background: #E91E63;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+/* Button 4 - Simple Scale */
+.btn4 {
+    border-color: #9C27B0;
+    color: #9C27B0;
+}
+
+.btn4:hover {
+    color: white;
+    background: #9C27B0;
+    transform: scale(1.05);
+}
+
+/* Button 5 - Simple Border Thickness */
+.btn5 {
+    border-color: #FF9800;
+    color: #FF9800;
+    border-width: 1px;
+}
+
+.btn5:hover {
+    color: white;
+    background: #FF9800;
+    border-width: 3px;
+}
+
+/* Button 6 - Simple Glow */
+.btn6 {
+    border-color: #009688;
+    color: #009688;
+}
+
+.btn6:hover {
+    color: white;
+    background: #009688;
+    box-shadow: 0 0 20px rgba(0, 150, 136, 0.4);
+}
+
+/* Add smooth transition to all buttons */
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover,
+.btn6:hover {
+    transition: all 0.3s ease;
+}

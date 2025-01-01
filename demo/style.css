@@ -1,0 +1,467 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background: #fcf3ec;
+}
+
+.button {
+    --offset: 10px;
+    --border-size: 2px;
+
+    display: block;
+    position: relative;
+    padding: 1.5em 3em;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: #e55743;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+    transition: background 0.8s ease;
+}
+
+.button:hover {
+    background: rgba(100, 0, 0, 0.03);
+}
+
+.button__horizontal,
+.button__vertical {
+    position: absolute;
+    top: var(--horizontal-offset, 0);
+    right: var(--vertical-offset, 0);
+    bottom: var(--horizontal-offset, 0);
+    left: var(--vertical-offset, 0);
+    transition: transform 0.8s ease;
+    will-change: transform;
+}
+
+.button__horizontal::before,
+.button__vertical::before {
+    content: '';
+    position: absolute;
+    border: inherit;
+}
+
+.button__horizontal {
+    --vertical-offset: calc(var(--offset) * -1);
+    border-top: var(--border-size) solid currentcolor;
+    border-bottom: var(--border-size) solid currentcolor;
+}
+
+.button__horizontal::before {
+    top: calc(var(--vertical-offset) - var(--border-size));
+    bottom: calc(var(--vertical-offset) - var(--border-size));
+    left: calc(var(--vertical-offset) * -1);
+    right: calc(var(--vertical-offset) * -1);
+}
+
+.button:hover .button__horizontal {
+    transform: scaleX(0);
+}
+
+.button__vertical {
+    --horizontal-offset: calc(var(--offset) * -1);
+    border-left: var(--border-size) solid currentcolor;
+    border-right: var(--border-size) solid currentcolor;
+}
+
+.button__vertical::before {
+    top: calc(var(--horizontal-offset) * -1);
+    bottom: calc(var(--horizontal-offset) * -1);
+    left: calc(var(--horizontal-offset) - var(--border-size));
+    right: calc(var(--horizontal-offset) - var(--border-size));
+}
+
+.button:hover .button__vertical {
+    transform: scaleY(0);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+  overflow: hidden;
+  /* width: 100vw;
+  height: 100vh; */
+  /* font-size: max(3.333vmin, 16px); */
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(20deg, hsl(250, 70%, 50%) 40%, hsl(240, 70%, 50%));
+  opacity: 0.2;
+}
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2em;
+  min-width: 13ch;
+  padding: 1em 1.15em;
+  border-radius: 2em;
+  transition:
+    opacity 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    transform 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    box-shadow 0.5s ease,
+    color 0.5s ease,
+    background 0.5s ease;
+  will-change: box-shadow, color, transform, opacity, background;
+  background: #6138d8;
+  box-shadow:
+    inset 0 0 0 0.1em #6138d8,
+    0 0 0 rgba(90, 56, 216, 0);
+}
+
+.btn.outlined {
+  background: none;
+  color: #3a2270;
+}
+
+.btn:after,
+.btn:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0;
+  right: -50%;
+  left: -50%;
+  height: 0;
+  padding-bottom: 200%;
+  border-radius: 39%;
+  transition: transform 0s cubic-bezier(0.2, 0, 0.1, 1) 0.5s, opacity 0.5s cubic-bezier(0.2, 0, 0.1, 1);
+  opacity: 0;
+}
+
+.btn:before {
+  transform: translate3d(-10%, 4.8em, 0) rotate(330deg);
+  background: linear-gradient(25deg, hsl(270, 70%, 50%), rgba(90, 56, 216, 0));
+}
+
+.btn:after {
+  transform: translate3d(10%, 4.8em, 0) rotate(0deg);
+  background: linear-gradient(70deg, rgba(90, 56, 216, 0.5), rgba(80, 56, 216, 0));
+}
+
+.btn:hover,
+.btn:focus {
+  transition:
+    opacity 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    transform 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    box-shadow 2s ease,
+    color 1.5s ease,
+    background 1s ease 0.75s;
+  background: hsl(270, 70%, 50%);
+  box-shadow:
+    inset 0 0 0 0.1em #6138d8,
+    0 0 1.75em rgba(90, 56, 216, 0.5);
+}
+
+/* .btn.outlined:hover,
+.btn.outlined:focus {
+  color: white;
+} */
+
+.btn:hover:before,
+.btn:hover:after,
+.btn:focus:before,
+.btn:focus:after {
+  transition: transform 2s ease 0s, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.btn:hover:before,
+.btn:focus:before {
+  transform: translate3d(-10%, -1em, 0) rotate(100deg);
+}
+
+.btn:hover:after,
+.btn:focus:after {
+  transform:@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+  overflow: hidden;
+  width: 50vw;
+  height: 0vh;
+  font-size: max(3.333vmin, 16px);
+  font-family: 'Noto Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height:50%;
+  background: linear-gradient(20deg, hsl(250, 70%, 50%) 40%, hsl(240, 70%, 50%));
+  opacity: 0.2;
+} */
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2em;
+  min-width: 13ch;
+  padding: 1em 1.15em;
+  border-radius: 2em;
+  transition:
+    opacity 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    transform 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    box-shadow 0.5s ease,
+    color 0.5s ease,
+    background 0.5s ease;
+  will-change: box-shadow, color, transform, opacity, background;
+  background: #6138d8;
+  box-shadow:
+    inset 0 0 0 0.1em #6138d8,
+    0 0 0 rgba(90, 56, 216, 0);
+}
+
+/* .btn.outlined {
+  background: none;
+  color: #3a2270;
+} */
+
+.btn:after,
+.btn:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 0;
+  right: -50%;
+  left: -50%;
+  height: 0;
+  padding-bottom: 200%;
+  border-radius: 39%;
+  transition: transform 0s cubic-bezier(0.2, 0, 0.1, 1) 0.5s, opacity 0.5s cubic-bezier(0.2, 0, 0.1, 1);
+  opacity: 0;
+}
+
+.btn:before {
+  transform: translate3d(-10%, 4.8em, 0) rotate(330deg);
+  background: linear-gradient(25deg, hsl(270, 70%, 50%), rgba(90, 56, 216, 0));
+}
+
+.btn:after {
+  transform: translate3d(10%, 4.8em, 0) rotate(0deg);
+  background: linear-gradient(70deg, rgba(90, 56, 216, 0.5), rgba(80, 56, 216, 0));
+}
+
+.btn:hover,
+.btn:focus {
+  transition:
+    opacity 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    transform 0.3s cubic-bezier(0.2, 0, 0.1, 1),
+    box-shadow 2s ease,
+    color 1.5s ease,
+    background 1s ease 0.75s;
+  background: hsl(270, 70%, 50%);
+  box-shadow:
+    inset 0 0 0 0.1em #6138d8,
+    0 0 1.75em rgba(90, 56, 216, 0.5);
+}
+
+/* .btn.outlined:hover,
+.btn.outlined:focus {
+  color: white;
+} */
+
+.btn:hover:before,
+.btn:hover:after,
+.btn:focus:before,
+.btn:focus:after {
+  transition: transform 2s ease 0s, opacity 0.2s ease;
+  opacity: 1;
+}
+
+.btn:hover:before,
+.btn:focus:before {
+  transform: translate3d(-10%, -1em, 0) rotate(100deg);
+}
+/* Perfect CSS for CTA Button with Hover Effect */
+.button {
+    width: 170px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .button-1 {
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  .button-1:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+  }
+  a{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 60px;
+    color: #1670f0;
+    text-transform:uppercase;
+    text-decoration:none;
+    letter-spacing: 5px;
+    font-size:30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow:hidden;
+  }
+  
+  a::before
+  {
+    content:"";
+    position:absolute;
+    top:2px;
+    left:2px;
+    bottom:2px;
+    width:50%;
+    background:rgba(255,255,255,0.05);
+    
+  }
+  a span:nth-child(1)
+  {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to right, #0c002b ,#1779ff);
+    animation: animate1 2s linear infinite;
+    animation-delay:1s;
+    
+  }
+  @keyframes animate1
+  {
+    0%
+    {
+      transform:translateX(-100%);
+  }
+    100%
+    {
+      transform:translateX(100%);
+    }
+  }
+  a span:nth-child(2)
+  {
+    position:absolute;
+    top:0;
+    right:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(to bottom, #0c002b ,#1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay:2s;
+  }
+  @keyframes animate2
+  {
+    0%
+    {
+      transform:translateY(-100%);
+  }
+    100%
+    {
+      transform:translateY(100%);
+    }
+  }
+  a span:nth-child(3)
+  {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to left, #0c002b ,#1779ff);
+     animation: animate3 2s linear infinite;
+    animation-delay:1s;
+    
+  }
+  @keyframes animate3
+  {
+    0%
+    {
+      transform:translateX(100%);
+  }
+    100%
+    {
+      transform:translateX(-100%);
+    }
+  }
+  a span:nth-child(4)
+  {
+    position:absolute;
+    top:0;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(to top, #0c002b ,#1779ff);
+     animation: animate4 2s linear infinite;
+    animation-delay:2s;
+    
+  }
+  @keyframes animate4
+  {
+    0%
+    {
+      transform:translateY(100%);
+  }
+    100%
+    {
+      transform:translateY(-100%);
+    }
+  }
+  

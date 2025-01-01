@@ -1,0 +1,25 @@
+@media(max-width:480px){
+   header{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+/* justify-content: space-between; */
+
+   }
+   
+    .hh{
+    height: 100px;
+     width: 100%;
+     border: 3px solid red;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+   } 
+
+   nav{
+    height: 300px;
+    width: 100%;
+    border: 2px solid red;
+   }
+}
