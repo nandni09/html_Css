@@ -1,0 +1,14 @@
+bootstrap is a framework its develop by twitter
+
+site coman layout 
+
+1= layout 
+2= typography
+3= nav manu
+4= form
+5= button
+6= pagination 
+7= icon
+8= fonts
+9= responsive 
+to aa badha ni ak coman css ne ak file ni andar put karia use karia framework 

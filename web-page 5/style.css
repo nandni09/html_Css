@@ -28,8 +28,6 @@ header{
 .mg{
     height: 1000px;
     width: 100%;
-    /* border: 2px solid; */
-  
     background-image: url(image/h1_hero3.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -40,9 +38,7 @@ header{
 nav{
     height: 60px;
     width: 700px;
-    /* border: 2px solid rebeccapurple; */
-    /* color: white; */
-    /* border-bottom: 2px solid red; */
+  
 }
 nav ul{
     list-style: none;

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+            height:900px;
+            width: 100%;
+            border: 2px solid;
+            display: flex;
+            /* Move the box to the center horizontally and vertically */
+            justify-content:left;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+        .box:hover{
+          
+            cursor: pointer;
+            transition: 1s;
+            background-color: aqua;
+            display: flex;
+            justify-content:left;
+            align-items:end;
+            transform:translatey(600px);
+            /* animation: move-box 1s infinite; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
