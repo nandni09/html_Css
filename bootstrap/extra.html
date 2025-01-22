@@ -21,11 +21,11 @@
       background-color: lemonchiffon;
       
     }
-    .col-12{
+    .col-md-12{
       display: flex;
       justify-content:space-evenly;
     }
-    .col-lg-2{
+    .col-md-10{
       background-color: lightskyblue;
     }
     #row3{
@@ -45,40 +45,63 @@
 <body>
   <div class="container">
     <div class="row" id="row1">
-      <div class="col-12 col-md-4">
-     <h1>Website Name</h1>
+      <div class="col-md-12">
+        <h1 class="h1">Website Name</h1>
       </div>
     </div>
     <div class="row" id="row2">
-      <div class="col-12  col-md-12">
-      <li><a href="">Home|</a></li>
-      <li><a href="">About us|</a></li>
-      <li><a href="">gallery|</a></li>
-      <li><a href="">contact us|</a></li>
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="row" id="row4">
-      <div class="col-lg-10">
-        <h2>Sub Heading</h2>
+      <div class="col-md-10 offset-md-1">
+        <h2 class="h2">Sub Heading</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id veniam suscipit voluptatem repellendus soluta cupiditate odit inventore corrupti rem facere officiis ducimus aspernatur veritatis, adipisci expedita laudantium enim sequi, iure recusandae quod! Aliquid commodi et quaerat blanditiis quidem suscipit minus quae dicta libero sit a recusandae quam eaque cupiditate nobis, numquam velit laboriosam necessitatibus rerum ducimus ad neque quos. Deleniti quo voluptates laudantium fuga autem incidunt eius soluta sapiente esse voluptas, natus ipsa rerum odio expedita illum dignissimos officia ex est veniam! Numquam soluta iste nulla, a impedit minima corrupti. Non magni repellat necessitatibus. Quae unde aliquid quod officia quis obcaecati perspiciatis quam earum dolorum inventore 
           cupiditate harum impedit amet similique animi quo mollitia iste minus, possimus sed? Perspiciatis repellendus sint a mollitia maiores?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam necessitatibus earum aspernatur, dolores assumenda blanditiis enim vel id pariatur perferendis ipsum quos cupiditate? Est temporibus ex esse, blanditiis rerum autem nostrum laudantium incidunt architecto perferendis eius cumque ducimus reprehenderit, ipsum nobis error inventore, molestiae id dicta dolor. Necessitatibus hic voluptas architecto rem et incidunt sit quas sed, dicta ratione accusantium quis cum. Reprehenderit consequatur atque excepturi distinctio, dolores vero dolorum vel molestiae nesciunt suscipit ipsum animi magnam enim earum quam saepe assumenda est dignissimos libero quia fugiat delectus quos tempore fugit? Ipsum eum eaque perferendis unde maxime. Itaque, quos perferendis, quo deserunt, cumque pariatur omnis dignissimos praesentium nihil laboriosam tenetur 
+            f ```html
             fuga mollitia aliquid velit hic nesciunt. Impedit accusamus animi minima quisquam maiores eum aut.</p>
       </div>
-      <div class="col-lg-2">
-        <li><a href="">Home</a></li>
-        <li><a href="">About us</a></li>
-        <li><a href="">gallery</a></li>
-        <li><a href="">contact us</a></li>
+      <div class="col-md-2">
+        <nav>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact us</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div class="row" id="row3">
-      <div class="col-md-10">
+      <div class="col-12">
         Website@Copyright 2025
       </div>
     </div>
-  
   </div>
-
 </body>
 </html>
