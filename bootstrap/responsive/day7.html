@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container-fluid{
+            /* border: 2px solid ; */
+        }
+        #row1{
+            height: 150px;
+            /* border: 2px solid red; */
+        }
+        #row2{
+            height: 400px;
+        }
+        #row3{
+            /* border: 2px solid; */
+            height: 400px;
+        }
+        #col1{
+            height: 1600px;
+             /* border: 2px solid; */
+        }
+        #row4{
+            height: 600px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row border-bottom  border-dark">
+            <div class="col-2 d-flex flex-column align-items-center">
+                <i class="fa-solid fa-dice-d20">mrs Frost</i>
+                    <p>Holiday Recipe Blog</p>
+
+            </div>
+            <div class="col-8 d-flex justify-content-evenly align-items-center list-unstyled">
+                <li><a href="" class="text-decoration-none text-secondary">Home</a></li> 
+                <li><a href="" class="text-decoration-none text-secondary">All recipes</a></li>
+                <li><a href="" class="text-decoration-none text-secondary">About me</a></li>
+                <li><a href="" class="text-decoration-none text-secondary">Contact</a></li>
+            </div>
+            <div class="col d-flex justify-content-evenly align-items-center">
+                <i class="fa-brands fa-facebook-f text-secondary"></i>
+                <i class="fa-brands fa-instagram text-secondary"></i>
+                <i class="fa-brands fa-pinterest-p text-secondary"></i>
+                <i class="fa-brands fa-youtube text-secondary"></i>
+            </div>
+        </div>
+        <div class="row" id="row1">
+            <div class="col text-center d-flex justify-content-center align-items-center">
+             <h1 class="display-4 text-secondary"> <em> Welcome to Mrs Frost's World</em></h1> 
+            </div>
+        </div>
+        <div class="row border-bottom  border-dark" id="row2">
+            <div class="col text-center">
+                     <img src="images/1 (1).jpg" class="img-fluid" alt=""> 
+                     <p class="text-secondary"><em>Christmas</em></p>
+                     <p>All Chrsitmas Recipes</p>
+            </div>
+            <div class="col text-center">
+                <img src="images/1 (2).jpg" class="img-fluid" alt="">
+                <p class="text-secondary"><em>Thanksgiving</em></p>
+                <p>All Thanksgiving Recipes</p>
+            </div>
+            <div class="col text-center">
+                <img src="images/1 (3).jpg" class="img-fluid" alt="">
+                <p class="text-secondary"><em>Halloween</em></p>
+                <p>All Halloween Recipes</p>
+            </div>
+            <div class="col text-center">
+                <img src="images/1 (4).jpg"  class="img-fluid" height="230px " width="300px">
+                <p class="text-secondary"><em>Easter</em></p>
+                <p>All Easter Recipes</p>
+            </div>
+            <div class="col text-center">
+                <img src="images/1 (7).jpg" class="img-fluid" alt="">
+                <p class="text-secondary"><em>4th of July</em></p>
+                <p>All 4th of July Recipes</p>
+            </div>
+        </div>
+        <div class="row border-bottom border-dark" id="row3">
+            <div class="col text-center">
+                <i class="fa-regular fa-heart display-6"></i>
+                <p class="display-5">
+                    "This Is a Message from the<br> Blogger, Write Something Inspirational<br> for the Readers to Enjoy"
+                </p>
+                <p class="text-muted mt-5">
+                        Love, <br>
+                        Mrs.Frost
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <i class="fa-solid fa-utensils"></i>
+                <p class="display-5"><em>Latest Recipes</em></p>
+            </div>
+        </div>
+        <div class="row border-bottom border-dark">
+            <div class="col-6" id="col1">
+                colmn1
+                <img src="images/1 (4).jpg" class="img-fluid float-end " alt="" height="500px" width="500px">
+                <img src="images/11.jpg" class="img-fluid float-end mt-4" alt="" height="500px" width="500px">
+                <img src="images/13.jpg"  class="img-fluid float-end mt-4" alt="" height="500px" width="500px">
+            </div>
+            <div class="col-6" id="col2">
+                <img src="images/1 (5).jpg" class="float-start" alt="" height="500px" width="500px">
+                <img src="images/14.jpg" class="float-start mt-4" alt="" height="500px" width="500px">
+                <img src="images/15.jpg" class="float-start mt-4" alt="" height="500px" width="500px">
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <i class="fa-solid fa-mitten display-6"></i>
+            <h1 class="display-5"><em>About me</em></h1>
+        </div>
+        <div class="row mt-4 d-flex justify-content-center align-items-center border-bottom border-dark" id="row4">
+            <div class="col-7 ms-5">
+                <img src="images/16.avif" alt="">
+            </div>
+            <div class="col">
+                <h1 class="display-6 text-secondary"><em> <strong>I'm Theresa<br>
+                    aka Mrs Frost</strong></em></h1>
+                    <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo,<br> velit culpa quisquam, eum consequuntur, fuga reiciendis<br> blanditiis tempore voluptate accusamus repudiandae eos quis iste at<br> architecto labore reprehenderit adipisci deleniti?</p>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                </div>
+        </div>
+
+    </div>
+</body>
+</html>
